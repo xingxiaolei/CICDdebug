@@ -10,6 +10,8 @@ driver = webdriver.Chrome(driverPath)
 
 driver.get("http://www.baidu.com")
 
+driver.find_element_by_css_selector("input#kw").send_keys("aaa")
+
 time.sleep(5)
 
 driver.quit()
